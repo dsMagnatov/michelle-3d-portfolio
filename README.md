@@ -2,6 +2,8 @@
 
 Interactive portfolio built with TypeScript, Three.js, GSAP ScrollTrigger and Vite, with desktop and mobile compositions.
 
+[Live site](https://michelle-3d-portfolio.vercel.app/) · [Public GitHub repository](https://github.com/dsMagnatov/michelle-3d-portfolio)
+
 ## Run
 
 ```sh
@@ -76,6 +78,8 @@ On mobile the portfolio preview stays above the work list, with readable stacked
 ## Publish
 
 Use Node.js 24 and pnpm. Vercel detects the pnpm lockfile and the Vite framework; `vercel.json` specifies `pnpm build` and the `dist` output directory. All required models, textures and the Anton licence are included in `public`.
+
+The Vercel project is connected to the GitHub repository. Pushing to `main` creates a production deployment.
 
 Original working uploads and local screenshots are kept locally and excluded from Git and deployment. Optimized browser assets and generated portfolio artwork are included. No environment variables or backend are required.
 

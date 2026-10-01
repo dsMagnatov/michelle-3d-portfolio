@@ -74,7 +74,7 @@ function render() {
   hero.style.opacity = !preference.matches && choreography(p).paint ? '0' : '1';
   hero.setAttribute('aria-hidden', String(!preference.matches && choreography(p).paint));
   scene?.update(p, preference.matches, look.x, look.y);
-  portfolio.setActive(preference.matches || !scene || p >= 0.985);
+  portfolio.setActive(preference.matches || document.documentElement.classList.contains('no-webgl') || p >= 0.985);
   stage.dataset.progress = p.toFixed(5);
   stage.dataset.motion = preference.matches ? 'reduced' : 'full';
 }

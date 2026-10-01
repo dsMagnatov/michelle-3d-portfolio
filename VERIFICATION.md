@@ -11,6 +11,8 @@ Latest revision: mobile layouts, touch controls and a new 3D-designer descriptor
 - Added touch handlers for caption tilt, horizontal tunnel look and ball pills. Vertical scrolling is preserved with `touch-action: pan-y`; touch hover clears on scroll. These event paths were reviewed in code; the browser verification used resized viewports and native mouse/keyboard input, not physical phones.
 - Portrait WebGL layers cap pixel density at 1.5; the scene uses a smaller depth target, wider 64° field of view and clearer white surface shading. The endpoint depends on the field of view, retaining the matching HTML portfolio handoff.
 - TypeScript, production build and physics checks passed. Browser warning/error log was empty. Restored the default viewport after checking.
+- Narrow mobile caption contacts continue solving until the balls no longer overlap. Added a focused regression check for this settling behavior.
+- First production load exposed a brief portfolio flash before its images finished decoding. Home now stays visible until the scene is ready; the HTML fallback activates only on an actual WebGL failure.
 - Captures: `artifacts/v9-mobile-home.png`, `artifacts/v9-mobile-home-small.png`, `artifacts/v9-mobile-portfolio.png`, `artifacts/v9-mobile-contact-small.png`.
 
 ## Social-ball hover revision
