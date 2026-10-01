@@ -78,7 +78,7 @@ export class AvatarScene {
     this.pivot.scale.set(scale * (1 - fold), scale * (1 - Math.pow(fold, 1.5)), scale * (1 - fold));
     const baseY = -logicalHeight / 2 - 2 * avatarScale + this.neckOffset * scale;
     this.pivot.position.set(
-      (this.layout.mobile ? logicalWidth * 0.06 + x * 20 - fold * 60 : (458 + x * 32 - fold * 140) * logicalWidth / DESIGN.width),
+      (this.layout.mobile ? x * 20 - fold * 60 : (458 + x * 32 - fold * 140) * logicalWidth / DESIGN.width),
       baseY - y * 24 * logicalHeight / DESIGN.height - fold * 240 * avatarScale,
       -fold * 700,
     );

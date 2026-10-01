@@ -24,6 +24,8 @@ export function measureComposition(container: HTMLElement): CompositionLayout {
     logicalHeight,
     mobile,
     // On very tall/narrow desktop windows, keep the head clear of the left-hand copy.
-    avatarScale: mobile ? Math.min(logicalHeight * 0.56 / 992, 1.1) : Math.min(width, height) / (DESIGN.height * scale),
+    avatarScale: mobile
+      ? Math.min(logicalHeight * 0.74, Math.max(0, logicalHeight - 520)) / 992
+      : Math.min(width, height) / (DESIGN.height * scale),
   };
 }

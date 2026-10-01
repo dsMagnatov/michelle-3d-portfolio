@@ -34,7 +34,7 @@ export class SoftBallWorld {
     this.platform = { ...platform };
     this.platformVX = this.platformVY = this.platformOmega = 0;
     const c = Math.cos(platform.angle), s = Math.sin(platform.angle);
-    const spawns = platform.halfWidth < 260 ? [0.1, 0.5, 0.9] : SPAWNS;
+    const spawns = platform.halfWidth < 260 ? [0.86, 0.5, 0.14] : SPAWNS;
     this.balls = RADII.map((radius, i) => {
       const t = (spawns[i] * 2 - 1) * platform.halfWidth;
       return {

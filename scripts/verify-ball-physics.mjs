@@ -58,7 +58,7 @@ assert(!floor.moving && floor.balls.every(ball => ball.grounded), 'Reduced motio
 world.reset(1920, 1337, { ...flat, y: 1087 });
 assert(world.balls.every(ball => ball.grounded && ball.y < 1087), 'Resize must put balls onto the relocated caption.');
 world.reset(720, 1558, { x: 360, y: 1270, halfWidth: 195, angle: 0 });
-world.balls[1].x = world.balls[0].x + 110;
+world.balls[1].x = world.balls[0].x + Math.sign(world.balls[1].x - world.balls[0].x) * 110;
 assert(world.moving, 'Overlapping balls must keep the solver awake.');
 for (let i = 0; i < 120 * 10 && world.moving; i++) world.step(step);
 assert(!world.moving && world.balls.every(ball => ball.grounded && ball.recycles === 0), 'Mobile caption settles without dropping balls.');

@@ -38,7 +38,7 @@ body { overflow-x: clip; }
 .subtitle { left: 2.34375%; top: 28.611111%; font-size: 63px; line-height: 73px; letter-spacing: 0; z-index: 0; }
 .subtitle span { display: block; width: max-content; white-space: nowrap; }
 .avatar { position: absolute; inset: 0; z-index: 1; }
-.hero-footer { left: 6.145833%; bottom: 0.462963%; font-size: 220px; line-height: 1.15; letter-spacing: 0; z-index: 2; transform-origin: center; }
+.hero-footer { left: 2.083333%; bottom: 0.462963%; font-size: 220px; line-height: 1.15; letter-spacing: 0; z-index: 2; transform-origin: center; }
 .social-balls { position: absolute; inset: 0; z-index: 3; }
 .ball-hover { position: absolute; top: 0; left: 0; z-index: 4; width: max-content; pointer-events: none; }
 .ball-hover-pill { display: flex; align-items: center; gap: 16px; height: 60px; padding: 0 24px; border-radius: 100px; background: rgb(230 230 230 / .74); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: #0033ff; font-size: 24px; line-height: 1; white-space: nowrap; opacity: 0; transform: translateY(6px) scale(.94); transform-origin: left center; transition: opacity .18s ease, transform .24s cubic-bezier(.2,.8,.2,1); }
@@ -101,10 +101,9 @@ body { overflow-x: clip; }
 @media (max-width: 767px) and (orientation: portrait) {
   .journey { height: 750svh; }
   .stage, .contact { height: 100svh; }
-  .hero-title { left: 28px; top: 20px; font-size: 148px; line-height: 1.04; }
+  .hero-title { left: 28px; top: 40px; font-size: 148px; line-height: 1; }
   .subtitle { left: 28px; top: 365px; font-size: 32px; line-height: 40px; }
-  .hero-footer { left: 28px; bottom: 22px; font-size: 128px; line-height: 1.08; width: calc(100% - 56px); pointer-events: auto; touch-action: pan-y; }
-  .hero-footer .title-line { margin: 0 auto; }
+  .hero-footer { left: 28px; bottom: 42px; font-size: 128px; line-height: 1.16; width: max-content; pointer-events: auto; touch-action: pan-y; }
   .ball-hover-pill { font-size: 27px; height: 68px; padding: 0 22px; }
   .ball-hover-arrow { font-size: 36px; }
   .portfolio { padding: 24px 22px; --work-scale: 1px; }
